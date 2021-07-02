@@ -1,4 +1,6 @@
 .section-one {
+    position: relative;
+
     background-image: linear-gradient(to top, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%), url(../../img/jpeg/background/background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,12 +131,15 @@
 
 .section-two {
     position: relative;
-
-    width: $container;
-    margin: 0 auto;
+    background-color: white;
 
     padding-top: 93px;
     padding-bottom: 140px;
+
+    .container {
+        width: $container;
+        margin: 0 auto;
+    }
 
     h2 {
         font-family: 'Alata', sans-serif;
@@ -315,7 +320,7 @@
         width: $container;
         left: 50%;
         transform: translateX(-50%);
-        
+
         display: grid;
         grid-template-columns: repeat(4, 25%);
         justify-items: start;
@@ -462,21 +467,21 @@
                     font-style: normal;
                     font-weight: 600;
                     font-size: 14px;
-    
+
                     letter-spacing: 0.6px;
                     text-align: center;
                     text-transform: uppercase;
                     color: #000000;
-    
+
                     display: block;
                     width: 196px;
                     margin-left: auto;
 
                     padding: 15px 40px;
                     background-color: $second-color;
-    
+
                     cursor: pointer;
-    
+
                     &::after {
                         content: url('../../img/svg/button/fork.svg');
                         padding-left: 4px;
@@ -523,6 +528,282 @@
                     margin-right: 0;
                 }
             }
+        }
+    }
+}
+
+.section-one .navigation-block {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    display: grid;
+    grid-gap: 40px;
+
+    justify-items: end;
+    align-items: center;
+
+    &__item-1 {
+        display: grid;
+        grid-template-columns: 16px 44px 66px;
+
+        justify-items: end;
+        align-items: center;
+    }
+
+    &__item-2,
+    &__item-3,
+    &__item-4 {
+        display: grid;
+        grid-template-columns: 16px 26px;
+
+        justify-items: end;
+        align-items: center;
+
+        grid-column-gap: 5px;
+    }
+
+    p {
+        font-family: 'Sofia Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+
+        color: white;
+
+        &.number-section {
+            font-size: 10px;
+        }
+
+        &.name-section {
+            font-size: 14px;
+        }
+
+        &.line {
+            display: block;
+            width: 20px;
+            height: 1px;
+            background-color: white;
+
+            margin-top: 3px;
+        }
+
+        &.line--active {
+            display: block;
+            width: 60px;
+            height: 1px;
+            background-color: white;
+
+            margin-top: 3px;
+        }
+    }
+}
+
+.section-two .navigation-block {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    display: grid;
+    grid-gap: 40px;
+
+    justify-items: end;
+    align-items: center;
+
+    &__item-2 {
+        display: grid;
+        grid-template-columns: 16px 44px 66px;
+
+        justify-items: end;
+        align-items: center;
+    }
+
+    &__item-1,
+    &__item-3,
+    &__item-4 {
+        display: grid;
+        grid-template-columns: 16px 26px;
+
+        justify-items: end;
+        align-items: center;
+
+        grid-column-gap: 5px;
+    }
+
+    p {
+        font-family: 'Sofia Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+
+        color: #000;
+
+        &.number-section {
+            font-size: 10px;
+        }
+
+        &.name-section {
+            font-size: 14px;
+        }
+
+        &.line {
+            display: block;
+            width: 20px;
+            height: 1px;
+            background-color: #000;
+
+            margin-top: 3px;
+        }
+
+        &.line--active {
+            display: block;
+            width: 60px;
+            height: 1px;
+            background-color: #000;
+
+            margin-top: 3px;
+        }
+    }
+}
+
+.section-three .navigation-block {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    display: grid;
+    grid-gap: 40px;
+
+    justify-items: end;
+    align-items: center;
+
+    &__item-3 {
+        display: grid;
+        grid-template-columns: 16px 60px 66px;
+
+        justify-items: end;
+        align-items: center;
+    }
+
+    &__item-1,
+    &__item-2,
+    &__item-4 {
+        display: grid;
+        grid-template-columns: 16px 26px;
+
+        justify-items: end;
+        align-items: center;
+
+        grid-column-gap: 5px;
+    }
+
+    p {
+        font-family: 'Sofia Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+
+        color: #000;
+
+        &.number-section {
+            font-size: 10px;
+
+            margin-top: 2px;
+        }
+
+        &.name-section {
+            font-size: 14px;
+        }
+
+        &.line {
+            display: block;
+            width: 20px;
+            height: 1px;
+            background-color: #000;
+
+            margin-top: 3px;
+        }
+
+        &.line--active {
+            display: block;
+            width: 60px;
+            height: 1px;
+            background-color: #000;
+
+            margin-top: 4px;
+        }
+    }
+}
+
+.section-four .navigation-block {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    display: grid;
+    grid-gap: 40px;
+
+    justify-items: end;
+    align-items: center;
+
+    &__item-4 {
+        display: grid;
+        grid-template-columns: 16px 56px 66px;
+
+        justify-items: end;
+        align-items: center;
+    }
+
+    &__item-1,
+    &__item-2,
+    &__item-3 {
+        display: grid;
+        grid-template-columns: 16px 26px;
+
+        justify-items: end;
+        align-items: center;
+
+        grid-column-gap: 5px;
+    }
+
+    p {
+        font-family: 'Sofia Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+
+        color: white;
+
+        &.number-section {
+            font-size: 10px;
+
+            margin-top: 2px;
+        }
+
+        &.name-section {
+            font-size: 14px;
+        }
+
+        &.line {
+            display: block;
+            width: 20px;
+            height: 1px;
+            background-color: white;
+
+            margin-top: 3px;
+        }
+
+        &.line--active {
+            display: block;
+            width: 60px;
+            height: 1px;
+            background-color: white;
+
+            margin-top: 3px;
         }
     }
 }
