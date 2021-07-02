@@ -1,0 +1,61 @@
+/* Alata */
+@font-face {
+    font-family: 'Alata';
+    src: url('Alata-Regular.eot');
+    src: local('Alata Regular'), local('Alata-Regular'),
+        url('Alata-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Alata-Regular.woff2') format('woff2'),
+        url('Alata-Regular.woff') format('woff'),
+        url('Alata-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Sofia Pro */
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('SofiaProLight.eot');
+    src: local('Sofia Pro Light'), local('SofiaProLight'),
+        url('SofiaProLight.eot?#iefix') format('embedded-opentype'),
+        url('SofiaProLight.woff2') format('woff2'),
+        url('SofiaProLight.woff') format('woff'),
+        url('SofiaProLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('SofiaProRegular.eot');
+    src: local('Sofia Pro Regular'), local('SofiaProRegular'),
+        url('SofiaProRegular.eot?#iefix') format('embedded-opentype'),
+        url('SofiaProRegular.woff2') format('woff2'),
+        url('SofiaProRegular.woff') format('woff'),
+        url('SofiaProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro Semi';
+    src: url('SofiaProSemiBold.eot');
+    src: local('Sofia Pro Semi Bold'), local('SofiaProSemiBold'),
+        url('SofiaProSemiBold.eot?#iefix') format('embedded-opentype'),
+        url('SofiaProSemiBold.woff2') format('woff2'),
+        url('SofiaProSemiBold.woff') format('woff'),
+        url('SofiaProSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('SofiaProBold.eot');
+    src: local('Sofia Pro Bold'), local('SofiaProBold'),
+        url('SofiaProBold.eot?#iefix') format('embedded-opentype'),
+        url('SofiaProBold.woff2') format('woff2'),
+        url('SofiaProBold.woff') format('woff'),
+        url('SofiaProBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

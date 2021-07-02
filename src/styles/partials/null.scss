@@ -1,0 +1,84 @@
+* {
+    box-sizing: inherit;
+
+    color: $first-color;
+    transition: .4s;
+
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+
+    &::selection {
+        background-color: $first-color;
+        color: #fff;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+
+    color: $first-color;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+select,
+button,
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    cursor: default;
+}
+
+input[type='file'] {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+address {
+    font-style: normal;
+}
