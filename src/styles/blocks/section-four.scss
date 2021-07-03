@@ -5,6 +5,11 @@
     padding-top: 100px;
     padding-bottom: 288px;
 
+    @media (max-width: 1023px) {
+        padding-top: 65px;
+        padding-bottom: 100px;
+    }
+
     .container {
         width: $container;
         margin: 0 auto;
@@ -12,11 +17,19 @@
         @media (max-width: 1199px) {
             width: calc(100% - 30px - 30px);
         }
+
+        @media (max-width: 1023px) {
+            width: calc(100% - 20px - 20px);
+        }
     }
 
     .contact-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 1023px) {
+            grid-template-columns: 1fr;
+        }
 
         &__item-1 {
             h2 {
@@ -28,6 +41,11 @@
                 color: #FFFFFF;
                 margin-bottom: 39px;
 
+                @media (max-width: 1023px) {
+                    font-size: 74px;
+                    margin-bottom: 24px;
+                }
+
                 &::after {
                     content: '';
                     display: block;
@@ -36,6 +54,10 @@
                     background-color: $second-color;
 
                     margin-top: 45px;
+
+                    @media (max-width: 1023px) {
+                        margin-top: 30px;
+                    }
                 }
             }
 
@@ -55,6 +77,10 @@
                 font-size: 40px;
 
                 color: $second-color;
+
+                @media (max-width: 1199px) {
+                    font-size: 34px;
+                }
             }
         }
 
