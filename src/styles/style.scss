@@ -1,5 +1,11 @@
-// styles/partials/..
-@import "partials/fonts";
-@import "partials/vars";
-@import "partials/null";
-@import "partials/general";
+// styles/base/..
+@import "base/fonts";
+@import "base/vars";
+@import "base/null";
+
+// styles/blocks/..
+@import "blocks/header";
+@import "blocks/section-one";
+@import "blocks/section-two";
+@import "blocks/section-three";
+@import "blocks/section-four";

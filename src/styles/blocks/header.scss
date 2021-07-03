@@ -1,0 +1,44 @@
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    max-width: $container;
+    margin: 0 auto;
+    padding-top: 35px;
+
+    @media (max-width: 1199px) {
+        max-width: none;
+        width: calc(100% - 30px - 30px);
+    }
+
+    .logo {
+        justify-self: left;
+
+        cursor: pointer;
+    }
+
+    .nav {
+        justify-self: right;
+
+        .menu {
+            display: flex;
+
+            &__item {
+                margin-right: 66px;
+                cursor: pointer;
+
+                padding-bottom: 6px;
+                border-bottom: 2px solid transparent;
+
+                &:hover {
+                    border-bottom: 2px solid $second-color;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

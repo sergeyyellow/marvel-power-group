@@ -1,0 +1,221 @@
+.section-three {
+    position: relative;
+    background-color: $second-color;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .container {
+        width: $container;
+        margin: 0 auto;
+
+        @media (max-width: 1199px) {
+            width: calc(100% - 30px - 30px);
+        }
+    }
+
+    h2 {
+        font-family: 'Alata', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 90px;
+        color: #000000;
+
+        margin-bottom: 55px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 6px;
+            background-color: white;
+
+            margin-top: 45px;
+        }
+    }
+
+    h3 {
+        font-family: 'Sofia Pro', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: #000000;
+
+        max-width: 300px;
+    }
+
+    .mw-75 {
+        max-width: 75%;
+    }
+
+    .services-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+
+        margin-top: 58px;
+        margin-bottom: 58px;
+
+        position: relative;
+
+        &__item-1,
+        &__item-2,
+        &__item-3 {
+            position: relative;
+        }
+
+        ul {
+            margin-top: 33px;
+            margin-bottom: 33px;
+
+            li {
+                padding-left: 20px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+
+                    display: block;
+                    width: 6px;
+                    height: 6px;
+
+                    background-color: white;
+
+                    left: 0;
+                    margin-top: 11px;
+                }
+            }
+        }
+
+        .arrow-right--button {
+            cursor: pointer;
+            padding-left: 20px;
+
+            &:hover {
+                transform: translateX(20px);
+            }
+        }
+    }
+
+    .lines-block {
+        position: absolute;
+        bottom: -7.5px;
+
+        width: $container;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        justify-items: start;
+        align-items: end;
+
+        z-index: 5;
+
+        @media (max-width: 1199px) {
+            width: calc(100% - 30px - 30px);
+        }
+
+        .line-1,
+        .line-2,
+        .line-3 {
+            width: 1px;
+            height: 15px;
+            background-color: #000;
+        }
+
+        .lines-block--grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .line-4 {
+                width: 1px;
+                height: 15px;
+                background-color: #000;
+            }
+
+            .line-5 {
+                width: 1px;
+                height: 15px;
+                background-color: #000;
+
+                justify-self: end;
+            }
+        }
+    }
+}
+
+.section-three .navigation-block {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    display: grid;
+    gap: 40px;
+
+    justify-items: end;
+    align-items: center;
+
+    @media (max-width: 1439px) {
+        display: none;
+    }
+
+    &__item-3 {
+        display: grid;
+        grid-template-columns: 16px 60px 66px;
+
+        justify-items: end;
+        align-items: center;
+    }
+
+    &__item-1,
+    &__item-2,
+    &__item-4 {
+        display: grid;
+        grid-template-columns: 16px 26px;
+
+        justify-items: end;
+        align-items: center;
+
+        column-gap: 5px;
+    }
+
+    p {
+        font-family: 'Sofia Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+
+        color: #000;
+
+        &.number-section {
+            font-size: 10px;
+
+            margin-top: 2px;
+        }
+
+        &.name-section {
+            font-size: 14px;
+        }
+
+        &.line {
+            display: block;
+            width: 20px;
+            height: 1px;
+            background-color: #000;
+
+            margin-top: 3px;
+        }
+
+        &.line--active {
+            display: block;
+            width: 60px;
+            height: 1px;
+            background-color: #000;
+
+            margin-top: 4px;
+        }
+    }
+}
