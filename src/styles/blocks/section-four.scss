@@ -87,6 +87,11 @@
         &__item-2 {
             justify-self: end;
 
+            @media (max-width: 1023px) {
+                justify-self: center;
+                width: 728px;
+            }
+
             h4 {
                 max-width: 290px;
 
@@ -98,6 +103,10 @@
 
                 margin-top: 54px;
                 margin-bottom: 40px;
+
+                @media (max-width: 1023px) {
+                    max-width: none;
+                }
             }
 
             .form-grid-container {
@@ -121,6 +130,10 @@
                     text-transform: uppercase;
 
                     cursor: text;
+
+                    @media (max-width: 1023px) {
+                        width: 100%;
+                    }
 
                     &::placeholder {
                         font-family: 'Sofia Pro', sans-serif;
