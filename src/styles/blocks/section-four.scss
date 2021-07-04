@@ -6,8 +6,13 @@
     padding-bottom: 288px;
 
     @media (max-width: 1023px) {
-        padding-top: 65px;
+        padding-top: 58px;
         padding-bottom: 100px;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 45px;
+        padding-bottom: 70px;
     }
 
     .container {
@@ -20,6 +25,10 @@
 
         @media (max-width: 1023px) {
             width: calc(100% - 20px - 20px);
+        }
+
+        @media (max-width: 767px) {
+            width: calc(100% - 15px - 15px);
         }
     }
 
@@ -46,6 +55,10 @@
                     margin-bottom: 24px;
                 }
 
+                @media (max-width: 767px) {
+                    font-size: 52px;
+                }
+
                 &::after {
                     content: '';
                     display: block;
@@ -68,6 +81,10 @@
                 font-size: 40px;
 
                 color: #FFFFFF;
+
+                @media (max-width: 767px) {
+                    font-size: 32px;
+                }
             }
 
             .email {
@@ -78,8 +95,18 @@
 
                 color: $second-color;
 
-                @media (max-width: 1199px) {
+                word-break: break-all;
+
+                @media (min-width: 1024px) and (max-width: 1199px) {
                     font-size: 34px;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 32px;
+                }
+
+                a {
+                    border-bottom: 2px solid $second-color;
                 }
             }
         }
@@ -90,6 +117,10 @@
             @media (max-width: 1023px) {
                 justify-self: center;
                 width: 728px;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
             }
 
             h4 {
@@ -106,6 +137,13 @@
 
                 @media (max-width: 1023px) {
                     max-width: none;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 32px;
+
+                    margin-top: 45px;
+                    margin-bottom: 23px;
                 }
             }
 
