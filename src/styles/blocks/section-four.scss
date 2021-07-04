@@ -59,6 +59,11 @@
                     font-size: 52px;
                 }
 
+                @media (max-width: 424px) {
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+
                 &::after {
                     content: '';
                     display: block;
@@ -85,6 +90,10 @@
                 @media (max-width: 767px) {
                     font-size: 32px;
                 }
+
+                @media (max-width: 424px) {
+                    font-size: 25px;
+                }
             }
 
             .email {
@@ -103,6 +112,10 @@
 
                 @media (max-width: 767px) {
                     font-size: 32px;
+                }
+
+                @media (max-width: 424px) {
+                    font-size: 24px;
                 }
 
                 a {
@@ -145,6 +158,10 @@
                     margin-top: 45px;
                     margin-bottom: 23px;
                 }
+
+                @media (max-width: 424px) {
+                    font-size: 25px;
+                }
             }
 
             .form-grid-container {
@@ -171,6 +188,10 @@
 
                     @media (max-width: 1023px) {
                         width: 100%;
+                    }
+
+                    @media (max-width: 424px) {
+                        margin-bottom: 10px;
                     }
 
                     &::placeholder {
