@@ -1,19 +1,25 @@
-Sofia Pro:
-300 Book
-400 Regular
-600 Semi-bold, Demi-bold
-700 Bold
+Для реализации сайта использована технология современной верстки «CSS Grid» 
+и подход «адаптивного дизайна» 📊
+Для работы со стилями сайта использован препроцессор Sass ✨
+Для сборки проекта использован task-менеджер Gulp 😀
+Проект собран в папку «build» 📦
 
-Alata:
-400 Regular
+На данный момент PageScore сайта 95/100 (https://prnt.sc/18k3u6r) ⏱
 
-Types of fonts 📔:
-100: Thin, Hairline, Ultra-light;
-200: Extra-light;
-300: Book, Light;
-400: Regular, Normal, Plain, Roman, Standard;
-500: Medium;
-600: Semi-bold, Demi-bold;
-700: Bold;
-800: Heavy, Black, Extra-bold;
-900: Ultra-black, Extra-black, Ultra-bold, Heavy-black, Fat, Poster.
+Сайт протестирован в разных браузерах 💻:
+1) Microsoft Edge; ✅
+2) Firefox; ✅
+3) Google Chrome; ✅
+4) Яндекс.Браузер; ✅
+5) iOS; ✅
+6) Android. ✅
+
+Используемые шрифты на сайте 📄:
+1) Sofia Pro:
+1.1) 300 Book;
+1.2) 400 Regular;
+1.3) 600 Semi-bold;
+1.4) 700 Bold.
+
+2) Alata:
+2.1) 400 Regular.

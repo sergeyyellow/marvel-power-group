@@ -7,24 +7,43 @@
     margin: 0 auto;
     padding-top: 35px;
 
+    position: relative;
+
+    &.header-fixed {
+        position: fixed;
+        z-index: 10;
+    }
+
     @media (max-width: 1199px) {
         max-width: none;
-        width: calc(100% - 30px - 30px);
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    
+
     @media (max-width: 1023px) {
-        width: calc(100% - 20px - 20px);
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     @media (max-width: 767px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px 15px;
     }
 
     .logo {
         justify-self: left;
-
         cursor: pointer;
+
+        path {
+            fill: black;
+        }
+
+        &.logo--active {
+            path {
+                fill: white;
+            }
+        }
     }
 
     .nav {
@@ -57,10 +76,91 @@
 
     .nav-mobile {
         display: grid;
+        justify-items: center;
         justify-self: end;
 
         @media (min-width: 768px) {
             display: none;
+        }
+
+        .burger-menu--inactive {
+            width: 25px;
+            height: 9px;
+            fill: none;
+
+            cursor: pointer;
+
+            &.visible {
+                display: none;
+            }
+
+            .line-1 {
+                fill: black;
+            }
+
+            .line-2 {
+                fill: black;
+            }
+        }
+
+        .burger-menu--active {
+            width: 20px;
+            height: 20px;
+            fill: none;
+
+            cursor: pointer;
+
+            &.visible {
+                display: none;
+            }
+
+            .line-1 {
+                fill: white;
+            }
+
+            .line-2 {
+                fill: white;
+            }
+        }
+
+        .menu-block {
+            display: none;
+
+            position: absolute;
+            top: 95px;
+            right: -100%;
+            z-index: 10;
+
+            width: 100%;
+            height: calc(100vh - 95px);
+            overflow-y: auto;
+
+            padding-top: 40px;
+            padding-bottom: 70px;
+
+            background-color: white;
+            text-align: center;
+
+            .menu-mobile {
+                font-family: 'Sofia Pro', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 40px;
+
+                color: #000000;
+
+                &__item {
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .contact-us--button {
+                margin-top: 80px;
+            }
         }
     }
 }
