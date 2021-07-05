@@ -41,4 +41,4 @@ Bootstrap не использовал, т.к.:
 2) Alata:
 2.1) 400 Regular.
 
-Ссылка на WordPress: https://github.com/sergeyyellow/wp_marvel-power-group
+Ссылка на данный проект, перенесенный на WordPress: https://github.com/sergeyyellow/wp_marvel-power-group
