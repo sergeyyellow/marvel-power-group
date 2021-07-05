@@ -49,6 +49,13 @@
     .nav {
         justify-self: right;
 
+        font-family: 'Sofia Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+
+        color: #000000;
+
         @media (max-width: 767px) {
             display: none;
         }

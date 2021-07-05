@@ -7,7 +7,7 @@
 
     @media (max-width: 1023px) {
         padding-top: 58px;
-        padding-bottom: 100px;
+        // padding-bottom: 100px;
     }
 
     @media (max-width: 767px) {
@@ -221,7 +221,7 @@
                     color: #000000;
 
                     display: block;
-                    width: 186px;
+                    width: 272px;
                     margin-left: auto;
 
                     padding: 10px 40px;
@@ -229,6 +229,10 @@
 
                     cursor: pointer;
                     border: 5px solid transparent;
+
+                    @media (max-width: 549px) {
+                        width: 196px;
+                    }
 
                     &:hover {
                         box-shadow: inset 0 0 0 6px black;
@@ -240,6 +244,68 @@
                         padding-left: 4px;
                     }
                 }
+            }
+        }
+    }
+
+    .lines-block {
+        position: absolute;
+        bottom: 90px;
+
+        width: $container;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+
+        justify-items: start;
+        align-items: end;
+
+        @media (max-width: 1199px) {
+            bottom: 90px;
+            width: calc(100% - 30px - 30px);
+        }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        .line-1 {
+            width: 1px;
+            height: 15px;
+            background-color: white;
+        }
+
+        .line-2 {
+            width: 1px;
+            height: 15px;
+            background-color: white;
+        }
+
+        .line-3 {
+            width: 1px;
+            height: 101px;
+            background-color: $second-color;
+        }
+
+        .lines-block--grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .line-4 {
+                width: 1px;
+                height: 15px;
+                background-color: white;
+            }
+
+            .line-5 {
+                width: 1px;
+                height: 15px;
+                background-color: white;
+
+                justify-self: end;
             }
         }
     }

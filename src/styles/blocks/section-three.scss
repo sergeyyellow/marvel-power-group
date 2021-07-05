@@ -131,7 +131,6 @@
             row-gap: 30px;
         }
 
-
         &__item-1,
         &__item-2,
         &__item-3 {
@@ -153,6 +152,7 @@
             }
 
             li {
+                margin-bottom: 5px;
                 padding-left: 20px;
 
                 @media (max-width: 424px) {

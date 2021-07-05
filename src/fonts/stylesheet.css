@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Alata';
+    src: url('Alata-Regular.eot');
+    src: local('Alata Regular'), local('Alata-Regular'),
+        url('Alata-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Alata-Regular.woff2') format('woff2'),
+        url('Alata-Regular.woff') format('woff'),
+        url('Alata-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
